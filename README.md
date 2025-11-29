@@ -35,12 +35,8 @@ A typical layout:
 ```text
 .
 ├─ run_eval.py                 # Main entry-point to run evaluation
-├─ check_openai_key.py         # (Optional) Simple script to sanity-check OPENAI_API_KEY
 ├─ requirements.txt            # Python dependencies
-├─ configs/
-│   ├─ eval_openai.yaml        # Example config using OpenAI as judge
-│   └─ eval_local.yaml         # Example config using local HF models
-├─ data/
+├─ finalparse/
 │   └─ sample_eval.jsonl       # Small sample dataset in Stage-3 format (for demo)
 ├─ rag_eval/
 │   ├─ __init__.py
@@ -54,4 +50,3 @@ A typical layout:
 │   ├─ utils.py                # Helper functions (loading models, vLLM, misc)
 │   ├─ logging_config.py       # Logger setup
 │   └─ (optional) other helpers: searcher.py, post_hoc_cite.py, auto_ais_loader.py, ...
-└─ .gitignore
